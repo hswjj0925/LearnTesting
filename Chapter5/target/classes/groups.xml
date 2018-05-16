@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name ="ggg">
+    <test name = "runall">
+        <classes>
+            <class name = "com.course.testCode.groups.groupTest1"/>
+            <class name = "com.course.testCode.groups.groupTest2"/>
+            <class name = "com.course.testCode.groups.groupTest3"/>
+        </classes>
+    </test>
+
+    <test name = "runOnlyGroup1">
+        <groups>
+            <run>
+                <include name = "group1"/>
+            </run>
+        </groups>
+        <classes>
+            <class name = "com.course.testCode.groups.groupTest1"/>
+            <class name = "com.course.testCode.groups.groupTest2"/>
+            <class name = "com.course.testCode.groups.groupTest3"/>
+        </classes>
+    </test>
+</suite>
