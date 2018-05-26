@@ -13,5 +13,4 @@
             <class name = "com.course.testCode.testSuite.PayTest"></class>
         </classes>
     </test>
-
 </suite>
