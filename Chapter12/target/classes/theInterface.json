@@ -1,0 +1,22 @@
+[
+  {
+    "description":"模拟一个登陆接口",
+    "request":{
+      "uri":"/v1/login",
+      "method":"post",
+      "headers":{
+        "Content-Type":"Application/json"
+      },
+      "json":{
+        "userName":"wangjiajia",
+        "passwd":"900925"
+      }
+    },
+    "response":{
+      "text":"true",
+      "cookies":{
+        "login":"true"
+      }
+    }
+  }
+]

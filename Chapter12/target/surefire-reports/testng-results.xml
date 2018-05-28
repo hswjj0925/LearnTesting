@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="1084" started-at="2018-05-28T09:35:12Z" finished-at="2018-05-28T09:35:13Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@566776ad]" name="loginTrue" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+      <group name="loginFalse">
+        <method signature="LoginTest.loginFalse()[pri:0, instance:com.course.cases.LoginTest@566776ad]" name="loginFalse" class="com.course.cases.LoginTest"/>
+      </group> <!-- loginFalse -->
+    </groups>
+    <test name="loginCase" duration-ms="1084" started-at="2018-05-28T09:35:12Z" finished-at="2018-05-28T09:35:13Z">
+      <class name="com.course.cases.LoginTest">
+        <test-method status="PASS" signature="beforeLogin()[pri:0, instance:com.course.cases.LoginTest@566776ad]" name="beforeLogin" is-config="true" duration-ms="32" started-at="2018-05-28T17:35:12Z" description="测试用户登陆前的准备工作" finished-at="2018-05-28T17:35:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeLogin -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@566776ad]" name="loginTrue" duration-ms="982" started-at="2018-05-28T17:35:12Z" description="正确的测试" finished-at="2018-05-28T17:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@566776ad]" name="loginFalse" duration-ms="59" started-at="2018-05-28T17:35:13Z" description="错误的测试" finished-at="2018-05-28T17:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.course.cases.LoginTest -->
+    </test> <!-- loginCase -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>

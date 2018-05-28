@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "用户管理系统测试套件">
+    <test name ="loginCase">
+        <!--<groups>-->
+            <!--<run>-->
+                <!--<include name = "loginTrue"/>-->
+            <!--</run>-->
+        <!--</groups>-->
+        <classes>
+            <class name = "com.course.cases.LoginTest" >
+                <methods>
+                    <include name="loginTrue"/>
+                    <include name="loginFalse"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite>

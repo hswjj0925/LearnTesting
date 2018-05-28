@@ -1,8 +1,7 @@
 package com.course.MyService;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.web.bind.annotation.*;
-
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -50,6 +49,17 @@ public class MyPostMethod {
             return "参数正确";
         }
         return "参数错误";
+    }
+    @RequestMapping(value = "/v1/login",method = RequestMethod.POST)
+    public String postWithCookie(HttpServletRequest request,  @RequestBody JSONObject jsonObject) {
+
+        String userName = (String) jsonObject.get("userName");
+        String passwd = (String) jsonObject.get("passwd");
+
+        if (userName.equals("wangjiajia") && passwd.equals("900925"))
+            return "true";
+        else return "false";
+
     }
 
 }
